@@ -9,8 +9,10 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Grid variable = new Grid(5,5);
+        Grid variable = new Grid(11,10);
         variable.displayGrid();
+        //Player player = new Player();
+        //player.askPlayerInformations();
 
     }
 }

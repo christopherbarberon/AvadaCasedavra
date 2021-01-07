@@ -1,5 +1,7 @@
 package avada.party;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
@@ -36,6 +38,32 @@ public class Player {
         }
         //
         askPlayersNames(this.playersNumber);
+        Random random = new Random();
+        int number = random.nextInt(100);
+        if(this.playersNumber == 2) {
+            if (number >= 50) {
+                System.out.println("Player : " + this.getPlayerName()[0] + " start");
+            } else {
+                System.out.println("Player : " + this.getPlayerName()[1] + " start");
+            }
+        } else if (this.playersNumber == 3) {
+            if (number >= 65) {
+                System.out.println("Player : " + this.getPlayerName()[0] + " start");
+            } else if ((number < 65) && (number > 30)) {
+                System.out.println("Player : " + this.getPlayerName()[1] + " start");
+            } else {
+                System.out.println("Player : " + this.getPlayerName()[2] + " start");
+            }
+        } else {
+            if (number >= 65) {
+                System.out.println("Player : " + this.getPlayerName()[0] + " start");
+            } else if ((number < 65) && (number > 30)) {
+                System.out.println("Player : " + this.getPlayerName()[1] + " start");
+            } else {
+                System.out.println("Player : " + this.getPlayerName()[2] + " start");
+            }
+        }
+        System.out.println(number);
     }
 
     /**

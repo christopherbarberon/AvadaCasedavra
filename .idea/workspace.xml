@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a24a710-2707-4877-b254-e2db8728ee82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/avada/party/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Party.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Grid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/avada/party/Party.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/avada/party/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/avada/party/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/avada/party/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/avada/party/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -96,21 +99,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="365" key="GridCell.Tab.0.bottom" timestamp="1609943381786">
+    <state width="1398" height="365" key="GridCell.Tab.0.bottom" timestamp="1609964539364">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="365" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1609943381786" />
-    <state width="1398" height="365" key="GridCell.Tab.0.center" timestamp="1609943381786">
+    <state width="1398" height="365" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1609964539364" />
+    <state width="1398" height="365" key="GridCell.Tab.0.center" timestamp="1609964539363">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="365" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1609943381786" />
-    <state width="1398" height="365" key="GridCell.Tab.0.left" timestamp="1609943381785">
+    <state width="1398" height="365" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1609964539363" />
+    <state width="1398" height="365" key="GridCell.Tab.0.left" timestamp="1609964539363">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="365" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1609943381785" />
-    <state width="1398" height="365" key="GridCell.Tab.0.right" timestamp="1609943381786">
+    <state width="1398" height="365" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1609964539363" />
+    <state width="1398" height="365" key="GridCell.Tab.0.right" timestamp="1609964539364">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="365" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1609943381786" />
+    <state width="1398" height="365" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1609964539364" />
+    <state x="208" y="23" width="1024" height="826" key="SettingsEditor" timestamp="1609949209652">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="208" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1609949209652" />
   </component>
 </project>

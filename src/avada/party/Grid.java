@@ -5,6 +5,10 @@ public class Grid {
     private final int gridX;
     private final int gridY;
 
+    private int[][] boxes;
+
+    private Player players = new Player();
+
     public Grid(int gridX, int gridY) {
         this.gridX = gridX;
         this.gridY = gridY;
@@ -13,18 +17,25 @@ public class Grid {
     /**
      * Method to display the game GRID
      */
-    public void displayGrid()
+    public int[][] displayGrid()
     {
         int[][] box = new int[this.gridX][this.gridY];
-        for (int x = 0; x < box.length; x++) {
-            for (int y = 0; y < box.length; y++) {
-                System.out.printf("%2d ", box[x][y]);
+        for (int x = 0; x < this.gridX; x++) {
+            for (int y = 0; y < this.gridY; y++) {
+                System.out.printf("%4d ", box[x][y]);
             }
             System.out.println();
         }
+        this.boxes = box;
+        return this.boxes;
     }
 
     public void displayGridWithPlayers()
     {
+        Player player = this.players;
+
+        for (int i = 0; i < this.players.getPlayerName().length; i++) {
+
+        }
     }
 }
