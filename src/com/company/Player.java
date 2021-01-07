@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -7,12 +8,19 @@ public class Player {
 
 
     private int playersNumber = 0;
+    public String[] playersNames=new String[2];
 
-    private String[] playersNames;
 
-    // Initialise Scanner
+
+    // Initialize Random constant
+    private final int random = new Random().nextInt(100);
+
+    // Initialize Scanner
     private Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Constructor
+     */
     public Player() {
     }
 
@@ -37,38 +45,60 @@ public class Player {
         }
 
         askPlayersNames(this.playersNumber);
-
-        Random random = new Random();
-        int number = random.nextInt(100);
-        if (this.playersNumber==2){
-            if (number>=50){
-                System.out.println("joueur 1 start");
-            }else {
-                System.out.println("joueur 2 start");
-            }
-        }else if (this.playersNumber==3){
-
-        }
-
-
+        chooseStartingPlayer();
+        System.out.println(playersNames[0]);
+        System.out.println(playersNames[1]);
 
     }
 
     /**
      * Ask players names
      */
+
     public void askPlayersNames(int playersNumber)
     {
-        String[] names = new String[playersNumber];
 
         int i;
         int tour = 0;
 
         for (i = 0; i < this.playersNumber; i++) {
             System.out.println("Enter the name of player number : " + ++tour);
-            names[i] = scanner.nextLine();
+            this.playersNames[i] = scanner.nextLine();
         }
-        this.playersNames = names;
+
+    }
+
+    /**
+     * Choose the starting player randomly
+     */
+    private void chooseStartingPlayer()
+    {
+        int number = this.random;
+
+        if(this.playersNumber == 2) {
+            if (number >= 50) {
+                System.out.println("Player : " + this.getPlayerName()[0] + " start");
+            } else {
+                System.out.println("Player : " + this.getPlayerName()[1] + " start");
+            }
+        } else if (this.playersNumber == 3) {
+            if (number >= 65) {
+                System.out.println("Player : " + this.getPlayerName()[0] + " start");
+            } else if ((number < 65) && (number > 30)) {
+                System.out.println("Player : " + this.getPlayerName()[1] + " start");
+            } else {
+                System.out.println("Player : " + this.getPlayerName()[2] + " start");
+            }
+        } else {
+            if (number >= 65) {
+                System.out.println("Player : " + this.getPlayerName()[0] + " start");
+            } else if ((number < 65) && (number > 30)) {
+                System.out.println("Player : " + this.getPlayerName()[1] + " start");
+            } else {
+                System.out.println("Player : " + this.getPlayerName()[2] + " start");
+            }
+        }
+
     }
 
     /**
@@ -78,9 +108,36 @@ public class Player {
      */
     public String[] getPlayerName()
     {
-        return this.playersNames;
+        return playersNames;
     }
+
+    /**
+     * Get the number of player playing
+     * @return
+     */
     public int getPlayerNumber(){
         return this.playersNumber;
     }
+
+    /**
+     * Get the first player name letter
+     *
+     * @return
+     */
+    public String[] getFirstLetter()
+    {
+
+        String name1 =this.playersNames[0];
+        String name2 =this.playersNames[1];
+        String[] FirstLetterNames= new String[2];
+        FirstLetterNames[0]=name1.substring(0,1);
+        FirstLetterNames[1]=name2.substring(0,1);
+        return FirstLetterNames;
+    }
+
+    /*public void showPlayerBoard()
+    {
+        String players = Arrays.toString(this.getPlayerName());
+        if (players)
+    }*/
 }

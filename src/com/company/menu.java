@@ -6,8 +6,10 @@ public class  menu {
     public void displayMenu() {
         Scanner enter = new Scanner(System.in);
         Player player = new Player();
-        Grid gridGame = new Grid();
-
+        Player player2 = new Player();
+        Game game = new Game();
+        game.grid.players[0]=player;
+        game.grid.players[1]=player2;
 
 
         System.out.println("\n" +
@@ -53,7 +55,7 @@ public class  menu {
         choice = enter.nextLine();
         if (choice.equals("S") || choice.equals("s")) {
             player.askPlayerInformations();
-            gridGame.displayGrid();
+            game.start();
 
         } else if (choice.equals("H") || choice.equals("h")) {
             System.out.println("voici le HS");
