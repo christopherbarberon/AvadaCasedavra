@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class  menu {
     public void displayMenu() {
         Scanner enter = new Scanner(System.in);
+        Player player = new Player();
+        Grid gridGame = new Grid();
+
+
 
         System.out.println("\n" +
                 "   ▄████████  ▄█    █▄     ▄████████ ████████▄     ▄████████    ▄████████    ▄████████    ▄████████    ▄████████ ████████▄     ▄████████  ▄█    █▄     ▄████████    ▄████████ \n" +
@@ -48,6 +52,9 @@ public class  menu {
         String choice;
         choice = enter.nextLine();
         if (choice.equals("S") || choice.equals("s")) {
+            player.askPlayerInformations();
+            gridGame.displayGrid();
+
         } else if (choice.equals("H") || choice.equals("h")) {
             System.out.println("voici le HS");
             System.out.println("press Q to return menu");
