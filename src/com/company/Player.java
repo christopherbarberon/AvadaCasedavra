@@ -46,9 +46,6 @@ public class Player {
 
         askPlayersNames(this.playersNumber);
         chooseStartingPlayer();
-        System.out.println(playersNames[0]);
-        System.out.println(playersNames[1]);
-
     }
 
     /**
@@ -117,6 +114,9 @@ public class Player {
      */
     public int getPlayerNumber(){
         return this.playersNumber;
+    }
+    public void setPlayerNumber(int nbPlayer){
+        this.playersNumber=nbPlayer;
     }
 
     /**
