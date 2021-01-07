@@ -1,13 +1,36 @@
 package com.company;
 
-import java.util.Arrays;
+import java.lang.*;
+import java.util.*;
 
 public class Grid {
-    private static char[][] board;
-    private Player players = new Player();
-    private final int gridX;
-    private final int gridY;
 
+    private static char[][] board;
+    public Player[] players = new Player[2];
+
+    /**
+     * Grid X position
+     */
+    private int gridX;
+
+    /**
+     * Grid Y position
+     */
+    private int gridY;
+
+    /**
+     * Player X position
+     */
+    private int playerX = 4;
+
+    /**
+     * Player Y position
+     */
+    private int playerY = 5;
+
+    /**
+     * Constructor
+     */
     public Grid() {
         this.gridX = 11;
         this.gridY = 10;
@@ -16,44 +39,75 @@ public class Grid {
     /**
      * Method to display the game GRID
      */
-    public void displayGrid() {
-        board= new char[gridY][gridX];
-        for (int i=0; i< gridY;i++){
-            for (int j=0;j<gridX;j++){
-                board[i][j]='+';
+    public String displayGrid() {
+        board= new char[gridY][gridX];       //initialisation du tableau
+        for (int i=0; i< gridY;i++){         //initialisation du tableau
+            for (int j=0;j<gridX;j++){       //initialisation du tableau
+                board[i][j]='+';             //initialisation du tableau
             }
         }
 
-        String firstPlayer = this.players.getFirstLetter();
-
-        board[4][5] = 'M';
-        board[5][5] = 'T';
-        board[5][3] = 'C';
+        board[playerY][playerX] = players[0].playersNames[0].charAt(0);  // positionnement des joueurs
+        board[playerY][playerX + 1] = players[0].playersNames[1].charAt(0);  // positionnement des joueurs
 
         for (int x = gridY; x>=0;x--){
-            System.out.print(x+"  ");
-            for (int y =0; y<gridX;y++){
-                if (x==0){
-                    System.out.print(y+1 +"  ");
-                }else {
-                    System.out.print(board[x-1][y]+ "  ");
+            System.out.print(x+"  ");                       //création du tableau
+            for (int y =0; y<gridX;y++){                    //création du tableau
+                if (x==0){                                  //création du tableau
+                    System.out.print(y+1 +"  ");            //création du tableau
+                }else {                                     //création du tableau
+                    System.out.print(board[x-1][y]+ "  ");  //création du tableau
                 }
             }
             System.out.println();
         }
         System.out.println();
 
+        System.out.println("\n\n               z: Haut");
+        System.out.print(" q: Gauche     ");
+        System.out.println("            d: Droite");
+        System.out.println("               s: Bas  ");
+
+        System.out.println( players[0].getPlayerName()[0]+": à toi de jouer");
+        Scanner movespot=new Scanner(System.in);
+        String inputMovement = movespot.next();
+        return inputMovement;
     }
 
-
-    public void displayGridWithPlayers() {
-        int[][] box = new int[this.gridX][this.gridY];
-
-        for (int x = 0; x < this.gridX; x++) {
-            for (int y = 0; y < this.gridY; y++) {
-                    System.out.printf("%2d ", box[x][y]);
-            }
-            System.out.println();
-        }
+    /**
+     * Get the X position of the Grid
+     * @return
+     */
+    public int getPlayerX()
+    {
+        return playerX;
     }
+
+    /**
+     * Get the Y position of the Grid
+     * @return
+     */
+    public int getPlayerY()
+    {
+        return playerY;
+    }
+
+    /**
+     * Set the X postion of the Grid
+     * @param playerX
+     */
+    public void setPlayerX(int playerX)
+    {
+        this.playerX = playerX;
+    }
+
+    /**
+     * Set the Y postion of the Grid
+     * @param playerY
+     */
+    public void setPlayerY(int playerY)
+    {
+        this.playerY = playerY;
+    }
+
 }

@@ -6,10 +6,9 @@ import java.util.Scanner;
 
 public class Player {
 
-
     private int playersNumber = 0;
 
-    private String[] playersNames;
+    public String[] playersNames = new String[2];
 
     // Initialize Random constant
     private final int random = new Random().nextInt(100);
@@ -45,7 +44,6 @@ public class Player {
 
         askPlayersNames(this.playersNumber);
         chooseStartingPlayer();
-        System.out.println(this.getFirstLetter());
     }
 
     /**
@@ -53,16 +51,14 @@ public class Player {
      */
     public void askPlayersNames(int playersNumber)
     {
-        String[] names = new String[playersNumber];
-
         int i;
         int tour = 0;
 
         for (i = 0; i < this.playersNumber; i++) {
             System.out.println("Enter the name of player number : " + ++tour);
-            names[i] = scanner.nextLine();
+            this.playersNames[i] = scanner.nextLine();
         }
-        this.playersNames = names;
+
     }
 
     /**
@@ -95,7 +91,7 @@ public class Player {
                 System.out.println("Player : " + this.getPlayerName()[2] + " start");
             }
         }
-        System.out.println(number);
+
     }
 
     /**
@@ -105,7 +101,7 @@ public class Player {
      */
     public String[] getPlayerName()
     {
-        return this.playersNames;
+        return playersNames;
     }
 
     /**
@@ -115,21 +111,24 @@ public class Player {
     public int getPlayerNumber(){
         return this.playersNumber;
     }
+    public void setPlayerNumber(int nbPlayer){
+        this.playersNumber=nbPlayer;
+    }
 
     /**
      * Get the first player name letter
      *
      * @return
      */
-    public String getFirstLetter()
+    public String[] getFirstLetter()
     {
-        String playerName = Arrays.toString(this.getPlayerName());
-        return playerName.substring(1, 2);
+
+        String name1 =this.playersNames[0];
+        String name2 =this.playersNames[1];
+        String[] FirstLetterNames= new String[2];
+        FirstLetterNames[0]=name1.substring(0,1);
+        FirstLetterNames[1]=name2.substring(0,1);
+        return FirstLetterNames;
     }
 
-    /*public void showPlayerBoard()
-    {
-        String players = Arrays.toString(this.getPlayerName());
-        if (players)
-    }*/
 }

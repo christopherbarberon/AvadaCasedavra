@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a24a710-2707-4877-b254-e2db8728ee82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Grid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Grid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/avada/party/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/avada/party/Grid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/avada/party/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Grid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AvadaCasedavra/com/company/menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,22 +100,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="275" key="GridCell.Tab.0.bottom" timestamp="1610024193013">
+    <state width="1398" height="461" key="GridCell.Tab.0.bottom" timestamp="1610057367701">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="275" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1610024193013" />
-    <state width="1398" height="275" key="GridCell.Tab.0.center" timestamp="1610024193012">
+    <state width="1398" height="461" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1610057367701" />
+    <state width="1398" height="461" key="GridCell.Tab.0.center" timestamp="1610057367700">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="275" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1610024193012" />
-    <state width="1398" height="275" key="GridCell.Tab.0.left" timestamp="1610024193012">
+    <state width="1398" height="461" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1610057367700" />
+    <state width="1398" height="461" key="GridCell.Tab.0.left" timestamp="1610057367700">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="275" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1610024193012" />
-    <state width="1398" height="275" key="GridCell.Tab.0.right" timestamp="1610024193012">
+    <state width="1398" height="461" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1610057367700" />
+    <state width="1398" height="461" key="GridCell.Tab.0.right" timestamp="1610057367701">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1398" height="275" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1610024193012" />
+    <state width="1398" height="461" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1610057367701" />
     <state width="1398" height="259" key="GridCell.Tab.1.bottom" timestamp="1610011970253">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
