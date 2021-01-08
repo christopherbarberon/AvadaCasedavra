@@ -6,11 +6,9 @@ import java.util.Scanner;
 
 public class Player {
 
-
     private int playersNumber = 0;
-    public String[] playersNames=new String[2];
 
-
+    public String[] playersNames = new String[2];
 
     // Initialize Random constant
     private final int random = new Random().nextInt(100);
@@ -51,10 +49,8 @@ public class Player {
     /**
      * Ask players names
      */
-
     public void askPlayersNames(int playersNumber)
     {
-
         int i;
         int tour = 0;
 
@@ -135,9 +131,4 @@ public class Player {
         return FirstLetterNames;
     }
 
-    /*public void showPlayerBoard()
-    {
-        String players = Arrays.toString(this.getPlayerName());
-        if (players)
-    }*/
 }
