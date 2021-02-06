@@ -49,10 +49,10 @@ public class Grid {
         this.gridX = 11;
         this.gridY = 10;
         this.indexTour=0;
-        board= new char[gridY][gridX];       //initialisation du tableau
-        for (int i=0; i< gridY;i++){         //initialisation du tableau
-            for (int j=0;j<gridX;j++){       //initialisation du tableau
-                board[i][j]='+';             //initialisation du tableau
+        board= new char[gridY][gridX];
+        for (int i=0; i< gridY;i++){
+            for (int j=0;j<gridX;j++){
+                board[i][j]='+';
             }
         }
 
@@ -73,8 +73,8 @@ public class Grid {
 
 
 
-        board[player1Y][player1X] = players[0].playersNames[0].charAt(0);  // positionnement des joueurs
-        board[player2Y][player2X] = players[0].playersNames[1].charAt(0);  // positionnement des joueurs
+        board[player1Y][player1X] = players[0].playersNames[0].charAt(0);
+        board[player2Y][player2X] = players[0].playersNames[1].charAt(0);
 
         displayBoard();
 
@@ -173,12 +173,12 @@ public class Grid {
     }
     public void displayBoard(){
         for (int x = 10; x>=0;x--){
-            System.out.print(x+"  ");                       //création du tableau
-            for (int y =0; y<11;y++){                    //création du tableau
-                if (x==0){                                  //création du tableau
-                    System.out.print(y+1 +"  ");            //création du tableau
-                }else {                                     //création du tableau
-                    System.out.print(board[x-1][y]+ "  ");  //création du tableau
+            System.out.print(x+"  ");
+            for (int y =0; y<11;y++){
+                if (x==0){
+                    System.out.print(y+1 +"  ");
+                }else {
+                    System.out.print(board[x-1][y]+ "  ");
                 }
             }
             System.out.println();
